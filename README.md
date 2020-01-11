@@ -9,13 +9,14 @@ To get domain name without subdomain symply call in your Yii2 app following php 
 </pre>
 <b>given url:</b> https://yourdomain.com<br>
 <b>result example:</b> yourdomain.com<p>
-<p>
+<br/>
 To get scheme call in your Yii2 app following php command:
 <pre>
 \wolverineo250kr\helpers\domain\DomainHelper::getScheme();
 </pre> 
 <b>given url:</b> https://yourdomain.com<br>
-<b>result example:</b> https<p>
+<b>result example:</b> https
+<br/>
 To get subdomain call in your Yii2 app following php command:
 <pre>
 \wolverineo250kr\helpers\domain\DomainHelper::getSubdomain();
