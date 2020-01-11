@@ -16,4 +16,9 @@ class DomainHelper extends Object
     {
         return (Yii::$app->request->isSecureConnection) ? 'https' : 'http';
     }
+	
+	static public function getSubdomain(): string
+    {
+        return preg_replace("/^(([a-zA-Z0-9][a-zA-Z0-9-]+).*\.)?([a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9]\.[a-zA-Z.]{2,})$/", '$2', Yii::$app->request->hostName);
+    }
 }
