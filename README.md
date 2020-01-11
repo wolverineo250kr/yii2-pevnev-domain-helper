@@ -15,7 +15,7 @@ To get scheme call in your Yii2 app following php command:
 \wolverineo250kr\helpers\domain\DomainHelper::getScheme();
 </pre> 
 <b>given url:</b> https://yourdomain.com<br>
-<b>result example:</b> https
+<b>result example:</b> https<p>
 <br/>
 To get subdomain call in your Yii2 app following php command:
 <pre>
