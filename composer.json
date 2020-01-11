@@ -3,6 +3,7 @@
     "description": "Domain helper based on Yii2 framework",
     "keywords": ["yii", "module"],
     "minimum-stability": "stable",
+    "license": "MIT",
     "authors": [
         {
             "name": "Певнев Константин Геннадьевич",
