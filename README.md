@@ -27,4 +27,4 @@ To get subdomain call in your Yii2 app following php command*:
 </pre>
 <b>given url:</b> https://subdomain.yourdomain.com<br>
 <b>result example:</b> subdomain<br/>
-<sub>* Incase of url with more than one subdomain, the command will always take first subdomain. Thus https://subdomain-one.subdomain-two.yourdomain.com will output <b>subdomain-one</b></sub>
+<sub>* Incase of url has more than one subdomain, the command will always take first subdomain. Thus https://subdomain-one.subdomain-two.yourdomain.com will output <b>subdomain-one</b></sub>
