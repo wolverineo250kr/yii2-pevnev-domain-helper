@@ -20,10 +20,11 @@ To get scheme call in your Yii2 app following php command:
 <b>result example:</b> https<p>
 <br/>
 ----------------------------------------------------------------
- <br/>
-To get subdomain call in your Yii2 app following php command:
+<br/>
+To get subdomain call in your Yii2 app following php command*:
 <pre>
 \wolverineo250kr\helpers\domain\DomainHelper::getSubdomain();
 </pre>
 <b>given url:</b> https://subdomain.yourdomain.com<br>
-<b>result example:</b> subdomain 
+<b>result example:</b> subdomain<br/>
+<sub>* Incase of url with more than one subdomain, the command will always take first subdomain. Thus https://subdomain-one.subdomain-two.yourdomain.com will output <b>subdomain-one</b></sub>
