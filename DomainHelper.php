@@ -5,20 +5,22 @@ namespace wolverineo250kr\helpers\domain;
 use Yii;
 use yii\base\Object;
 
-class DomainHelper extends Object
-{
-    static public function getBase(): string
-    {
+class DomainHelper extends Object {
+
+    static public function getZone(): string {
+        return preg_replace("/^([a-zA-Z0-9].*\.)?([a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9])?([a-zA-Z.]{2,})$/", '$3', Yii::$app->request->hostName);
+    }
+
+    static public function getBase(): string {
         return preg_replace("/^([a-zA-Z0-9].*\.)?([a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9]\.[a-zA-Z.]{2,})$/", '$2', Yii::$app->request->hostName);
     }
 
-	static public function getScheme(): string
-    {
+    static public function getScheme(): string {
         return (Yii::$app->request->isSecureConnection) ? 'https' : 'http';
     }
-	
-	static public function getSubdomain(): string
-    {
+
+    static public function getSubdomain(): string {
         return preg_replace("/^(([a-zA-Z0-9][a-zA-Z0-9-]+).*\.)?([a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9]\.[a-zA-Z.]{2,})$/", '$2', Yii::$app->request->hostName);
     }
+
 }
