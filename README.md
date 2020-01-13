@@ -3,6 +3,14 @@
 <h2>Install</h2>
 <b>composer require "wolverineo250kr/yii2-pevnev-domain-helper":"*"</b>
 <h2>Usage</h2>
+To get domain zone without subdomain symply call in your Yii2 app following php command:
+<pre>
+\wolverineo250kr\helpers\domain\DomainHelper::getZone();
+</pre>
+<b>given url:</b> https://yourdomain.com<br>
+<b>result example:</b> com<p>
+<br/>
+----------------------------------------------------------------
 To get domain name without subdomain symply call in your Yii2 app following php command:
 <pre>
 \wolverineo250kr\helpers\domain\DomainHelper::getBase();
