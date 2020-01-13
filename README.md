@@ -11,6 +11,7 @@ To get domain zone without subdomain symply call in your Yii2 app following php 
 <b>result example:</b> com<p>
 <br/>
 ----------------------------------------------------------------
+ <br/>
 To get domain name without subdomain symply call in your Yii2 app following php command:
 <pre>
 \wolverineo250kr\helpers\domain\DomainHelper::getBase();
